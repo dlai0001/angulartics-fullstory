@@ -1,0 +1,36 @@
+﻿{
+  "name": "angulartics-fullstory",
+  "version": "0.0.1",
+  "description": "FullStory plugin for Angulartics",
+  "keywords": [
+    "fullstory",
+    "analytics",
+    "plugin",
+    "angular",
+    "angulartics"
+  ],
+  "author": "David Lai <consulting@dlaisoft.com> (https://github.com/dlai0001)",
+  "contributors": [
+    "David Lai <consulting@dlaisoft.com> (https://github.com/dlai0001)"
+  ],
+  "main": "lib/index.js",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "prebuild": "npm run clean",
+    "build": "mkdir -p dist && uglifyjs lib/angulartics-fullstory.js --compress --source-map dist/angulartics-fullstory.min.js.map --source-map-root .. --source-map-url ../dist/angulartics-fullstory.min.js.map -o dist/angulartics-fullstory.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/angulartics/angulartics-fullstory"
+  },
+  "bugs": {
+    "url": "https://github.com/angulartics/angulartics-fullstory/issues"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "angulartics": "~1.0.0"
+  },
+  "devDependencies": {
+    "uglify-js": "^2.4.23"
+  }
+}
