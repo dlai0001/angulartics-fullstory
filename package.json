@@ -1,6 +1,6 @@
-﻿{
+{
   "name": "angulartics-fullstory",
-  "version": "0.0.1",
+  "version": "0.0.1-/?.0",
   "description": "FullStory plugin for Angulartics",
   "keywords": [
     "fullstory",
